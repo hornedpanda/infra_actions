@@ -65,7 +65,7 @@ jobs:
           tags: hornedpanda/infra_actions:latest 
   
   deploy:
-    name: Deploy to server ${{ secrets.HOST }}
+    name: Deploy to server
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
     steps:
